@@ -72,6 +72,9 @@
       "TARGET": false,
       "VERSION": false,
       "CONFIG": false
+    },
+    "rules": {
+      "linebreak-style": 0
     }
   },
   "dependencies": {
@@ -81,7 +84,8 @@
     "vue-router": "2.3.0",
     "vue-server-renderer": "2.2.4",
     "vuex": "2.2.1",
-    "yargs": "7.0.2"
+    "yargs": "7.0.2",
+    "yarn": "^1.7.0"
   },
   "repository": {
     "type": "git",
