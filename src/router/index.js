@@ -7,9 +7,9 @@ const _import = require('./_import_' + TARGET)
 Vue.use(Router)
 
 const routes = [
-  { 
-    path: '/', 
-    component:  _import('Full'),
+  {
+    path: '/',
+    component: _import('Full'),
     children: [
       {
         path: 'test',
@@ -20,10 +20,8 @@ const routes = [
         component: _import('Foo')
       }
     ]
-  },
-  { path: '/', component: _import('Full') },
-  { path: '/foo/:id', name: 'foo', component: _import('Foo') },
-  { path: '/show-error-page', component: _import('ShowErrorPage') }
+  }
+  // { path: '/show-error-page', component: _import('ShowErrorPage') }
 ]
 
 if (TARGET === 'web') {
